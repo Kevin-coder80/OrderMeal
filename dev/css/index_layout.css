@@ -1,0 +1,7 @@
+.header span {
+  text-align: right;
+}
+.header span i {
+  margin-right: 20px;
+  font-style: normal;
+}
