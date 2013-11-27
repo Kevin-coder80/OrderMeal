@@ -1,0 +1,61 @@
+.header {
+  border-bottom: 1px solid #000;
+}
+.header span {
+  text-align: right;
+}
+.header span i {
+  margin-right: 20px;
+  font-style: normal;
+}
+.extends-bookblock,
+.main .wrapper .bookblock {
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  -o-perspective: 2000px;
+  -ms-perspective: 2000px;
+  perspective: 2000px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.main .wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.main .wrapper .bookblock {
+  width: 100%;
+  height: 100%;
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  -o-perspective: 2000px;
+  -ms-perspective: 2000px;
+  perspective: 2000px;
+}
+.main .wrapper .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: none;
+}
+.main .wrapper .item .side {
+  width: 50%;
+  float: left;
+  height: 100%;
+  display: flexbox;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  align-items: center;
+}
