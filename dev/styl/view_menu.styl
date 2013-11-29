@@ -1,48 +1,29 @@
-.extends-bookblock
-  margin 0 auto
-  position relative
-  z-index 100
-  -webkit-perspective 2000px
-  -moz-perspective 2000px
-  -o-perspective 2000px
-  -ms-perspective 2000px
-  perspective 2000px
-  -webkit-backface-visibility hidden
-  -moz-backface-visibility hidden
-  -o-backface-visibility hidden
-  -ms-backface-visibility hidden
-  backface-visibility hidden
-
 .main
-  .wrapper
+  .bb-custom-wrapper
     position relative
     width 100%
     height 100%
-    .bookblock
-      @extends .extends-bookblock
+    padding-bottom 10px
+    .bb-bookblock
       width 100%
-      height 100%
+      height 409px
       -webkit-perspective 2000px
       -moz-perspective 2000px
       -o-perspective 2000px
       -ms-perspective 2000px
       perspective 2000px
-    .item
-      position absolute
-      top 0
-      left 0
-      width 100%
-      background #fff
-      display none
-      .side
-        width 50%
-        float left
-        height 100%
-        display flexbox
-        flex-direction row
-        -webkit-box-pack center
-        -moz-box-pack center
-        justify-content center
-        -webkit-box-align center
-        -moz-box-align center
-        align-items center
+    .bb-custom-side
+      float left
+      width 50%
+      height 100%
+      border-left 1px dotted #ddd
+    ul
+      padding 0
+      margin 0
+      li
+        list-style none
+        padding 10px
+        border-bottom 1px dotted #ddd
+        cursor pointer
+        &:hover
+          box-shadow 0px 0px 10px 1px rgba( 255, 0, 0, .6 )

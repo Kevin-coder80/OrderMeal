@@ -5,11 +5,14 @@ requirejs.config( {
     js: 'dev/js'
   },
   shim: {
+    'libs/jquery.easing': {
+      deps: ['libs/jquery']
+    },
     'libs/jquery.bookblock': {
-      deps: ['libs/jquery'],
-      exports: 'BookBlock'
+      deps: ['libs/jquery']
+    },
+    'js/orddering-dishes': {
+      deps: ['libs/jquery']
     }
   }
 } );
-
-requirejs( ['js/bookblock'] );
