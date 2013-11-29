@@ -6,13 +6,27 @@
           .bb-item( style="display: block" )
             - for ( var j = 0; j < 2; j++ )
               .bb-custom-side
-                ul
+                ul( class="row" )
                   - for ( var k = 0; k < 10; k++ )
-                    li sdfsafasfasdfasfasdf
+                    li( class="clearfix" )
+                      span( class="col-xs-6 col-md-6 col-sm-6 col-lg-6 dishes" ) sdfsafasfasdfasfasdf
+                      span( class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pay" ) 10￥
         else
           .bb-item( style="display: none" )
             - for ( var j = 0; j < 2; j++ )
               .bb-custom-side
-                ul
+                ul( class="row" )
                   - for ( var k = 0; k < 10; k++ )
-                    li sdfsafasfasdfasfasdf
+                    li( class="clearfix" )
+                      span( class="col-xs-6 col-sm-6 col-md-6 col-lg-6 dishes" ) sdfsafasfasdfasfasdf
+                      span( class="col-xs-6 col-sm-6 col-md-6 col-lg-6 pay" ) 10￥
+  .row
+    .col-xs-6.col-sm-6.col-md-6.col-lg-6.ordering-dishes
+      ul( id="result-show", class="row" )
+        li( class="clearfix" )
+          span( class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dishes" ) sdfsafasfasdfasfasdf
+          span( class="col-xs-4 col-sm-4 col-md-4 col-lg-4 name" ) 瓜籽
+          span( class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pay" ) 10￥
+    .col-xs-6.col-sm-6.col-md-6.col-lg-6.check-out
+      span 总金额：
+      span 100￥
